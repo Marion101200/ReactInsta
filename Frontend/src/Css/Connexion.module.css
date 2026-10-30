@@ -1,0 +1,87 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f4f1fa;
+}
+
+.form {
+  width: 100%;
+  max-width: 380px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  border-top: 5px solid #6b5b95;
+  box-shadow: 0 5px 15px #302b6320;
+}
+
+.champ {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.champ label {
+  margin-bottom: 8px;
+  color: #302b63;
+  font-weight: bold;
+}
+
+.champ input {
+  padding: 12px;
+  border: 1px solid #d5d0e3;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.champ input:focus {
+  outline: 2px solid #b8a9e0;
+  border-color: #6b5b95;
+}
+
+.lien {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.lien a {
+  color: #6b5b95;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.lien a:hover {
+  text-decoration: underline;
+}
+
+.form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6b5b95;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form button:hover {
+  background-color: #302b63;
+  transform: translateY(-2px);
+}
+
+.erreur {
+  color: #d93025;
+  text-align: center;
+  font-size: 14px;
+}
+
+.succes {
+  color: #218838;
+  text-align: center;
+  font-size: 14px;
+}

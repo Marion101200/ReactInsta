@@ -1,0 +1,18 @@
+.layout {
+  display: grid;
+  grid-template-areas:
+    "banner"
+    "menu"
+    "content"
+    "footer";
+
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto auto minmax(0, 1fr) auto;
+
+  min-height: 100vh;
+  row-gap: 0;
+}
+
+.contentContainer {
+  min-width: 0;
+}

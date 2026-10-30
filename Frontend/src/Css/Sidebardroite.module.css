@@ -1,0 +1,40 @@
+
+.sidebar {
+  padding: 15px;
+  background-color: #f5f8fc;
+  border: 1px solid #d5e1ec;
+  border-radius: 5px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+
+.section {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d5e1ec;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.section h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #174a70;
+}
+
+.section h3 {
+  margin-top: 0;
+  font-size: 16px;
+  color: #174a70;
+}
+
+.section p {
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444;
+}

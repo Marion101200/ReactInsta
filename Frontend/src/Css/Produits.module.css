@@ -1,0 +1,224 @@
+
+.page {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr) 200px;
+  gap: 20px;
+  align-items: start;
+  width: 100%;
+}
+
+/* Affichage administrateur sans sidebars */
+.contentAdmin {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.boutonAjouter {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 20px;
+  background-color: #174a70;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.boutonAjouter:hover {
+  background-color: #23658f;
+}
+
+/* Boutons administrateur */
+.actionsAdmin {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.actionsAdmin button {
+  flex: 1;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Bouton modifier */
+.actionsAdmin button:first-child {
+  background-color: #174a70;
+}
+
+.actionsAdmin button:first-child:hover {
+  background-color: #23658f;
+}
+
+/* Bouton supprimer */
+.actionsAdmin button:last-child {
+  background-color: #dc3545;
+}
+
+.actionsAdmin button:last-child:hover {
+  background-color: #b02a37;
+}
+
+.actionsAdmin button:focus-visible {
+  outline: 2px solid #174a70;
+  outline-offset: 3px;
+}
+
+.listeProduits {
+  min-width: 0;
+}
+
+.listeProduits h2 {
+  margin-top: 0;
+  color: #174a70;
+}
+
+/* Carte du produit */
+.carte {
+  margin-top: 15px;
+  padding: 20px;
+  border: 1px solid #d5e1ec;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 3px 8px rgba(23, 74, 112, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.actionsAdmin {
+  display: flex;
+  gap: 10px;
+}
+.carte:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(23, 74, 112, 0.14);
+}
+
+/* Nom du produit */
+.carte h3 {
+  margin: 0 0 12px;
+  color: #174a70;
+  font-size: 20px;
+}
+
+/* Description */
+.description {
+  margin: 0 0 20px;
+  padding-left: 12px;
+  border-left: 3px solid #8bb8d8;
+  color: #586879;
+  font-size: 14px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+/* Prix et quantité côte à côte */
+.infos {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.info {
+  flex: 1;
+  min-width: 100px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #f0f6fb;
+  box-sizing: border-box;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  color: #647789;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.prix {
+  color: #174a70;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.quantite {
+  color: #2c6e49;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Titre du produit et cœur des favoris */
+.titreProduit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.titreProduit h3 {
+  margin: 0 0 12px;
+  color: #174a70;
+  font-size: 20px;
+}
+
+/* Bouton favori */
+.boutonFavori {
+  border: none;
+  background: transparent;
+  color: #8b9bab;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.boutonFavori:hover {
+  color: #e25570;
+  transform: scale(1.15);
+}
+
+.favoriActif {
+  color: #e25570;
+}
+
+
+.boutonPanier {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px 14px;
+  background-color: #7e22ce;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.boutonPanier:hover {
+  background-color: #6b21a8;
+}
+
+.boutonPanier:focus-visible {
+  outline: 2px solid #581c87;
+  outline-offset: 3px;
+}
